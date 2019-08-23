@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+
+	<title>Test task</title>
+
+	<script src="https://www.google.com/recaptcha/api.js" async="true"></script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Finger+Paint|Margarine|Sedgwick+Ave+Display&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+	<div id="test">
+		test
+	</div>
+
+	<section id=main>
+
+		<img id="main-img" src="http://placekitten.com/480/200">
+
+		<form id="comment" action="/comment" method="POST">
+			<label for="name">Ваше имя</label>
+			<input id="name" autocomplete="off" name="name" type="text" placeholder="Ivan Cringe">
+			<label for="message"> Оставить комментарий</label>
+			<textarea id="message" autocomplete="false" name="message" maxlength="250"
+				placeholder="Join discussion..."></textarea>
+
+			<button class="button" type="submit">Отправить</button>
+			<div class="g-recaptcha" data-callback="captchaOk" data-theme="dark"
+				data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+			<!-- <div class="g-recaptcha" data-theme="dark" data-sitekey="6Le2x60UAAAAAPJoQz9Incfd2ng8ua_VOTK14mi3 -->
+		</form>
+
+	</section>
+
+	<hr />
+
+	<section id="comments">
+		<h1>Комментарии</h1>
+
+		<div id="comments-feed"></div>
+	</section>
+
+	<script src="main.js"></script>
+</body>
+
+
+</html>

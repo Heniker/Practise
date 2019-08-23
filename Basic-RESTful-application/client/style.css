@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "AmazMegaGrungeOne";
+  src: url("AmazMegaGrungeOne.ttf") format("truetype");
+}
+
+body {
+  color: white;
+  margin: 0;
+  background-color: rgb(7, 47, 47);
+  /* background-color: rgb(47, 47, 47); */
+  /* background-color: rgb(7, 0, 0); */
+}
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 15px;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  margin: 15px auto;
+  display: block;
+  /* text-align: center; */
+  font-family: "Sedgwick Ave Display", cursive;
+  /* font-family: 'Times New Roman', Times, serif; */
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 480px;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(197, 197, 197);
+  background-color: rgb(34, 34, 34);
+  border: 1px solid gray;
+}
+
+input {
+	height: 50px;
+}
+
+textarea {
+	height: 90px;
+}
+
+label {
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-weight: 900; */
+  font-size: 2.5rem;
+  display: block;
+}
+
+#test {
+  position: fixed;
+}
+
+#main {
+  /* font-family: 'AmazMegaGrungeOne', Courier, monospace; */
+  font-family: "AmazMegaGrungeOne";
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+#name {
+  margin-bottom: 30px;
+}
+
+#comments {
+  display: block;
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+}
+
+#comments > h1 {
+  text-decoration: underline;
+}
+
+#comments-feed {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  /* padding: 30px; */
+  /* border: 1px solid lightgray; */
+}
+
+.button {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 12px 24px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  white-space: nowrap;
+  color: white;
+	background-color: #104179;
+	text-shadow: 2px 2px 5px black;
+  border: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.comment {
+  margin-bottom: 30px;
+}
+
+.comment > footer {
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: #684545;
+  margin-top: 5px;
+}
+
+.g-recaptcha {
+  display: inline-block;
+  margin: 15px;
+}
+
+.user-name {
+  color: #0763ce;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.date {
+	font-weight: 500;
+	font-size: 0.8rem;
+  color: #666666;
+  float: right;
+}
+
+.text {
+  overflow-wrap: break-word;
+}
+
+.delete {
+	cursor: pointer;
+}

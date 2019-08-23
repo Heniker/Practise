@@ -1,0 +1,18 @@
+{
+	"name": "console-tree",
+	"version": "1.0.0",
+	"description": "",
+	"main": "Tree/consoleTree/index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^24.9.0",
+		"@types/jest": "^24.0.18",
+		"jest-extended": "^0.11.2"
+	},
+	"dependencies": {}
+}

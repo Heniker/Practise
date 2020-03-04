@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test-Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    /> -->
+  </head>
+
+  <body>
+    <div id="app" class="pa-0 ma-0">
+      <v-app>
+        <v-content class="main">
+          <header>
+            <section>
+              <v-container class="pl-8">
+                <v-row align="center">
+                  <v-icon x-large>
+                    crop_square
+                  </v-icon>
+                  <v-spacer></v-spacer>
+                  <div class="header">
+                    <a href="#about">ABOUT US</a>
+                    <a href="#contact">WRITE COMMENT</a>
+                    <a href="#comments">COMMENTS</a>
+                  </div>
+                </v-row>
+              </v-container>
+            </section>
+          </header>
+          <v-container>
+            <section>
+              <h1 class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry
+              </h1>
+            </section>
+          </v-container>
+          <img
+            src="http://placekitten.com/g/1500/700"
+            alt="picture duh"
+            class="picture"
+          />
+          <section>
+            <v-container>
+              <v-row class="mb-6" justify="center" no-gutters>
+                <!-- <v-spacer></v-spacer> -->
+                <v-col class="col" col="4">
+                  <div>
+                    <v-icon large class="pb-4">
+                      crop_square
+                    </v-icon>
+                    <h3 class="pb-6">
+                      Who we are
+                    </h3>
+                    <ul>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi, vero. Sapiente est et distinctio, fuga a nemo
+                        earum ullam? Facere, sunt voluptas. Ducimus aut
+                        repudiandae assumenda deserunt, cum error id.
+                      </li>
+                      <li>Tea</li>
+                      <li>Milk</li>
+                    </ul>
+                  </div>
+                </v-col>
+                <!-- <v-spacer></v-spacer> -->
+                <v-col class="col" col="4">
+                  <div>
+                    <v-icon large class="pb-4">
+                      crop_square
+                    </v-icon>
+                    <h3 class="pb-6">
+                      What we do
+                    </h3>
+                    <ul>
+                      <li>Coffee</li>
+                      <li>Tea</li>
+                      <li>Milk</li>
+                    </ul>
+                  </div>
+                </v-col>
+                <!-- <v-spacer></v-spacer> -->
+                <v-col class="col" col="4">
+                  <div>
+                    <v-icon large class="pb-4">
+                      crop_square
+                    </v-icon>
+                    <h3 class="pb-6">
+                      Technology
+                    </h3>
+                    <ul>
+                      <li>Coffee</li>
+                      <li>Tea</li>
+                      <li>Milk</li>
+                    </ul>
+                  </div>
+                </v-col>
+                <!-- <v-spacer></v-spacer> -->
+              </v-row>
+            </v-container>
+          </section>
+          <footer>
+            <v-container>
+              <v-row justify="center" no-gutters>
+                <v-spacer></v-spacer>
+                <v-col col="6">
+                  <h2>
+                    Write comment
+                  </h2>
+                </v-col>
+                <v-spacer></v-spacer>
+                <v-col col="6">
+                  <textarea
+                    name="input"
+                    placeholder="Title"
+                    cols="50"
+                    rows="1"
+                    class="mb-3"
+                    ></textarea>
+                    <textarea
+                    name="input"
+                    placeholder="Title"
+                    cols="50"
+                    rows="5"
+                    class="mb-3"
+                  ></textarea>
+                  <v-btn large class="black--text px-9" color="#60e3a1" dark class="button">Send</v-btn>
+                </v-col>
+                <v-spacer></v-spacer>
+              </v-row>
+            </v-container>
+          </footer>
+        </v-content>
+      </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+      })
+    </script>
+  </body>
+
+  <style>
+    textarea {
+      /* width: 50%; */
+      resize: none;
+      border-radius: 5px;
+      padding: 15px;
+      border: 1px solid #4eae80;
+      /* outline: 1px solid #4eae80; */
+    }
+    textarea::placeholder {
+      color: #4eae80;
+    }
+
+    footer {
+      padding-top: 10rem;
+    }
+
+    .button {
+      color: black;
+    }
+
+    :root {
+      /* this should be managed by @media rules */
+      /* font-size: 1.5vw;  works good for mobile */
+      font-size: 0.85vw;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      line-height: 6.5rem;
+      font-size: 6rem;
+    }
+
+    h2 {
+      line-height: 4.5rem;
+      font-size: 4rem;
+    }
+
+    h3 {
+      line-height: 3rem;
+      font-size: 3rem;
+    }
+
+    li {
+      font-size: 1.5rem;
+      padding-top: 0.8rem;
+      hyphens: manual;
+    }
+
+    .description {
+      margin: 5rem 20rem 5rem 8rem;
+      /* padding-top: 5rem; */
+      /* padding-left: 8rem; */
+      /* padding-right: 20rem; */
+    }
+
+    .col {
+      max-width: 27%;
+    }
+
+    .col > div {
+      /* -webkit-hyphens: auto; */
+      /* -ms-hyphens: auto; */
+      padding-right: 3rem;
+    }
+
+    .main {
+      margin-top: 5rem;
+    }
+
+    .picture {
+      width: 100%;
+      height: 45rem;
+      margin-bottom: 4rem;
+    }
+
+    .header > a {
+      padding-right: 3.5rem;
+      font-size: 1.3rem;
+      color: gray;
+      text-decoration: none;
+    }
+
+    .header > a:last-child {
+      padding-right: 1rem;
+    }
+
+    footer {
+      color: white;
+      background-color: black;
+      /* height: 100px; */
+    }
+  </style>
+</html>

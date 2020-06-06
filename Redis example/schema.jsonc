@@ -1,0 +1,17 @@
+// example redis structure.
+// Used only as reference of how data is layed out.
+
+{
+  "generator": 1, // #TTL - id of current generator
+  "client:id:alive": 1, // #TTL
+  "next_client_id": 1, // #autoIncrement
+  "clients": "sorted set", // set of alive clients' ids
+  // generator is also a client
+
+  // "tasks:id": "array", // - tasks taken by the client
+  // - not implemented yet. Was meant to make clients take more
+  // than a single task to reduce calls to Redis
+
+  "tasks": "array", // array of task strings
+  "errors": "array" // array of tasks with errors
+}

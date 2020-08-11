@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "downlevelIteration": true,
+    "outDir": "./dist"
+  },
+  "importHelpers": true,
+  "exclude": ["node_modules"],
+}

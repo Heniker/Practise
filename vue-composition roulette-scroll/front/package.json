@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "build": "webpack src/main.ts --mode=production",
+    "build-dev": "webpack src/main.ts",
+    "serve": "webpack-dev-server ./src/main.ts",
+    "serve-p": "webpack-dev-server src/main.ts --mode=production",
+    "lint": "eslint --ext .ts,.vue,.js -c .eslintrc.js src/ --fix"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.0.0-beta.6",
+    "assert": "^2.0.0",
+    "scroll-into-view": "^1.15.0",
+    "vue": "^2.6.11",
+    "vuetify": "^2.3.7"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "csso-loader": "^0.3.1",
+    "csso-webpack-plugin": "^2.0.0-beta.1",
+    "fibers": "^4.0.2",
+    "html-webpack-plugin": "^4.0.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pnp-webpack-plugin": "^1.6.4",
+    "portfinder": "^1.0.28",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "vue-loader": "^15.9.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.4.3",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

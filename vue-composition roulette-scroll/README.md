@@ -17,4 +17,4 @@ npm i
 npm start
 ```
 
-![.github/1.gif]
+![](.github/1.gif)
